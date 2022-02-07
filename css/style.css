@@ -19,6 +19,7 @@ body{
 .card-content img{
     width: 100%;
     border-radius: 8px;
+
 }
 
 h1{
@@ -37,12 +38,14 @@ p{
 }
 
 .info{
-    display: flexbox;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info p{
     display: inline;
+    justify-content: end;
     font-size: 18px;
 }
 
@@ -56,7 +59,9 @@ span{
 }
 
 .author{
-    display: inline-flex;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .author p{
@@ -68,6 +73,7 @@ span{
     border-radius: 50%;
     height: 35px;
     width: 35px;
+    margin: 10px;
 }
 
 .attribution{
