@@ -1,5 +1,14 @@
+:root{
+    --softBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --VeryDarkBlue1: hsl(217, 54%, 11%);
+    --VeryDarkBlue2: hsl(216, 50%, 16%);
+    --VeryDarkBlue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
 body{
-    background-color: hsl(217, 54%, 11%);
+    background-color: var(--VeryDarkBlue2);
     font-family: 'Outfit', sans-serif;
     width: 100%;
 }
@@ -7,38 +16,58 @@ body{
 .card{
     margin-left: auto;
     margin-right: auto;
-    background-color: hsl(216, 50%, 16%);
-    width: 30%;
+    background-color: var(--VeryDarkBlue1);
+    width: 375px;
     border-radius: 13px;
 }
 
 .card-content{
-    width: 90%;
+    padding: 20px;
     margin: auto;
 }
 
-.card-content img{
+.author img{
     width: 100%;
     border-radius: 8px;
     
 }
 
+.image-principal{
+    width: 335px;
+    border-radius: 15px;
+}
+
 h1{
-    color: hsl(0, 0%, 100%);
+    color: var(--White);
     font-weight: 600;
+    font-size: 25px;
 }
 
 p{
     font-size: 18px;
-    color: hsl(215, 51%, 70%);
+    color: var(--softBlue);
     font-weight: 300;
 }
 
 .time{
     font-weight: 400;
+    height: 18px;
+}
+
+.time img{
+    height: 20px;
+    vertical-align:bottom;
+    margin-right: 5px;
+}
+
+.eth img{
+    height: 20px;
+    vertical-align: bottom;
+    margin-right: 5px;
 }
 
 .info{
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -51,15 +80,16 @@ p{
 }
 
 strong{
-    color: hsl(178, 100%, 50%);
+    color: var(--Cyan);
     font-weight: 400;
 }
 
 span{
-    color: hsl(0, 0%, 100%);
+    color: var(--White);
 }
 
 .author{
+    margin-top: 20px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -70,7 +100,7 @@ span{
     display: inline;
 }
 .author img{
-    border: 1px solid white;
+    border: 1px solid var(--White);
     border-radius: 50%;
     height: 35px;
     width: 35px;
